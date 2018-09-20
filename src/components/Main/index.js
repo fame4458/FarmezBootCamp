@@ -3,16 +3,18 @@ import { Container } from 'reactstrap'
 import styled from 'styled-components'
 
 const Image = styled.img`
-  &:hover{
+  background-repeat: no-repeat;
+  content: url(${props => props.src}.png);
+  &:hover {
     transform: rotate(360deg);
     transition: 1s;
+    content: url(${props => props.src}-hover.png);
   }
 `
 
-const photo = [ 'design', 'coding','print','photo']
+const photo = ['design', 'coding', 'print', 'photo']
 
 export default class Main extends React.Component {
-
   render() {
     return (
       <Container>
@@ -32,7 +34,11 @@ export default class Main extends React.Component {
         </p>
         <div className="text-center">
           {photo.map((data, index) => (
-              <Image key={index} src={`static/img/features-icon-${data}.png`} className="m-4" />
+            <Image
+              key={index}
+              src={`static/img/features-icon-${data}`}
+              className="m-4"
+            />
           ))}
         </div>
       </Container>
