@@ -1,5 +1,13 @@
 import React from 'react'
 import { Container } from 'reactstrap'
+import styled from 'styled-components'
+
+const Image = styled.img`
+  &:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+  }
+`
 
 const photo = [ 'design', 'coding','print','photo']
 
@@ -24,7 +32,7 @@ export default class Main extends React.Component {
         </p>
         <div className="text-center">
           {photo.map((data, index) => (
-              <img key={index} src={`static/img/features-icon-${data}.png`} className="m-4" />
+              <Image key={index} src={`static/img/features-icon-${data}.png`} className="m-4" />
           ))}
         </div>
       </Container>
