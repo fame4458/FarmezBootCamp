@@ -12,7 +12,7 @@ import styled from 'styled-components'
 
 const Card = styled(DefaultCard)`
   color: #000;
-  width: 100%;
+  width: 75%;
 `
 
 const CardBox = props => {

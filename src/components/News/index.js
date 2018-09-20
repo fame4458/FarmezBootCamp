@@ -10,7 +10,7 @@ export default class News extends React.Component {
 
   render() {
     return (
-      <div className='d-flex'>
+      <div className='container d-flex'>
         {this.state.photo.map((data,index) => (
           <Card key={index} src={data} />
         ))}
