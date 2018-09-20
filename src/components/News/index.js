@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {Container} from 'reactstrap'
 import Card from '../Core/Card'
 export default class News extends React.Component {
@@ -10,11 +10,11 @@ export default class News extends React.Component {
 
   render() {
     return (
-      <div className='container d-flex'>
+      <Container className='d-flex'>
         {this.state.photo.map((data,index) => (
           <Card key={index} src={data} />
         ))}
-      </div>
+      </Container>
     )
   }
 }
