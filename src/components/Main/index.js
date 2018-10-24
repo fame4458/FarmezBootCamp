@@ -18,7 +18,7 @@ export default class Main extends React.Component {
   render() {
     return (
       <Container>
-        <h1 className="text-center">OUR MAIN SERVICES</h1>
+        <h1 className="text-center">OUR MAIN SERVICES 123</h1>
         <h5 className="text-center">LET ME INTRODUCE US</h5>
         <p className="text-center">
           Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
