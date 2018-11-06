@@ -12,7 +12,7 @@ const Image = styled.img`
   }
 `
 
-const photo = ['design', 'coding', 'print', 'photo']
+const photo = ['Design', 'coding', 'print', 'photo']
 
 export default class Main extends React.Component {
   render() {
